@@ -15,8 +15,6 @@ def check_pwd(val):
         for y in spec_chars:
             if x == y:
                 has_spec = True
-    if val == "aaaaaaaa":
-        return False
     if 7 < len(val) < 21:
         size = True
     if has_spec == False or size == False or has_upper == False or has_lower == False or has_digit == False:
