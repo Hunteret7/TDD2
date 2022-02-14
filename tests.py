@@ -7,8 +7,14 @@ class TestCase(unittest.TestCase):
         x= "aaaaaaaa"
         self.assertFalse(check_pwd(x))
 
+    # len 7
     def test2(self):
         x= "aaaaaaa"
+        self.assertFalse(check_pwd(x))
+
+    # len 21
+    def test3(self):
+        x= "aaaaaaaaaaaaaaaaaaaaa"
         self.assertFalse(check_pwd(x))
 
 if __name__ == '__main__':
