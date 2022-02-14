@@ -37,6 +37,11 @@ class TestCase(unittest.TestCase):
         x = "!aA3fffffff"
         self.assertTrue(check_pwd(x))
 
+    # no digit
+    def test8(self):
+        x = "!aAdfffffff"
+        self.assertFalse(check_pwd(x))
+
 
 if __name__ == '__main__':
     unittest.main()
