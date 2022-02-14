@@ -17,5 +17,10 @@ class TestCase(unittest.TestCase):
         x= "aaaaaaaaaaaaaaaaaaaaa"
         self.assertFalse(check_pwd(x))
 
+    # no special char
+    def test4(self):
+        x = "aaaaaaA8"
+        self.assertFalse(check_pwd(x))
+
 if __name__ == '__main__':
     unittest.main()
