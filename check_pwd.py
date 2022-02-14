@@ -6,7 +6,6 @@ def check_pwd(val):
     for x in val:
         if x.isupper():
             has_upper = True
-            print("ere")
         for y in spec_chars:
             if x == y:
                 has_spec = True
