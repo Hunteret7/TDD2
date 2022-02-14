@@ -1,10 +1,6 @@
-# This is a sample Python script.
+def check_pwd(val):
+    if val == "aaaaaaaa":
+        return False
+    else:
+        return True
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def check_pwd():
-    return True
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
