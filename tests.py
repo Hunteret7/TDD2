@@ -22,5 +22,10 @@ class TestCase(unittest.TestCase):
         x = "aaaaaaA8"
         self.assertFalse(check_pwd(x))
 
+    # no uppercase
+    def test5(self):
+        x = "aaaa!aaaaaaa8"
+        self.assertFalse(check_pwd(x))
+
 if __name__ == '__main__':
     unittest.main()
